@@ -194,7 +194,7 @@ button.nav-btn {
     padding: 4px 10px;
     border: none;
     color: #fff;
-    background-color: green;
+    background-color: #D3D3D3;
     font-size: clamp(14px,3vw,30px);
     font-weight: 600;
 }
@@ -1414,7 +1414,7 @@ textarea.inner-text_aria {
     border-radius: 50px;
     margin-right: -20px;
     border: 2px dashed #d5b6b6;
-    color: red;
+    color: #D3D3D3;
 }
 
 .section-8-second-side {
@@ -1563,18 +1563,18 @@ textarea.inner-text_aria {
     position: relative;
 }
 .images-9 span i {
-    color: red;
+    color: #D3D3D3;
     font-size: 13px;
 }
 .section-9-inner-aria> p {
     color: #fff;
 } 
  .section-9-inner-aria> p>span {
-    color: red;
+    color: #D3D3D3;
 } 
 
 .section-9-inner-aria> p>span>a {
-    color: red;
+    color: #D3D3D3;
 } 
  /*    section -----------9 end   */
 
@@ -1611,7 +1611,7 @@ button.section-10-btn::after {
     right: -11px;
     font-size: 34px;
     top: -6px;
-    color: red;
+    color: #D3D3D3;
 }
 .section-10-body {
     padding: 20px 30px 0 20px;
@@ -1688,6 +1688,7 @@ button.section-10-btn::after {
     padding: 25px 50px;
     border-bottom: 1px solid #ada3a357;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-text> h4 {
@@ -1703,10 +1704,10 @@ button.section-10-btn::after {
     font-weight: 600;
     margin: 0;
     padding-top: 4px;
+    margin-bottom: 10px;
 }
 
 .footer-email {
-    width: 40%;
 }
 .footer_img> img {
     width: 100%;
@@ -1752,7 +1753,7 @@ ul.inner-footer>li {
 }
 
 ul.inner-footer>li>i {
-    color: red;
+    color: #D3D3D3;
     font-family: 'FontAwesome';
 }
 .footer_img>img {
@@ -1817,7 +1818,7 @@ ul.inner-footer>li>i.fa-clock + a {
 }
 
 .copy-right-aria>p>span {
-    color: red;
+    color: #D3D3D3;
 }
 
 .footer-contact>ul {
@@ -1841,6 +1842,20 @@ ul.inner-footer>li>i.fa-clock + a {
 }
 .footer_img {
     width: clamp(110px ,18.4vw,200px);
+}
+.navbar-2-side-1 > li> a:hover {
+    color: #080866;
+    transition: 0.4s;
+}
+
+ul.navbar-2-side-2> li>a:hover {
+    color: #080866;
+    transition: 0.4s;
+}
+
+button.nav-btn:hover {
+    background-color: #080866;
+    transition: 0.6s;
 }
 /*      footer end */
 /*      ------  Media query start*/
@@ -1939,22 +1954,9 @@ ul.navbar-2-side-2> li>a {
 }
 
 
-ul.navbar-2-side-1 > li> a:hover {
-    color: blue;
-}
 
-ul.navbar-2-side-2> li>a:hover {
-    color: blue;
-}
-
-button.nav-btn:hover {
-    background-color: blue;
-}
 button.nav-btn {
     padding: 14px 40px;
-    border: none;
-    color: #fff;
-    background-color: green;
     font-size: clamp(14px,3vw,30px);
     font-weight: 600;
 }
