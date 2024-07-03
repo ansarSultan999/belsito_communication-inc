@@ -228,7 +228,7 @@ button.nav-btn {
     background-color: #fff;
 }
 .main-text> h1 {
-    font-size: clamp(18px,5.4vw,66px);
+    font-size: clamp(25px,7.4vw,66px);
     font-weight: 700;
     color: #fff;
     text-transform: capitalize;
@@ -360,13 +360,25 @@ button.nav-btn {
 .section2 {
     height: 50px;
     width: 50px;
-    background-color: #080866;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #07095f;
+    transition: 0.5s;
+}
+.section2:hover {
+    background-color: #07095f;
+    transition: 0.5s;
 }
 
+.section2:hover .section2>img {
+    background-color: #07095f;
+}
+
+.section2:hover img {
+    filter: invert(1);
+}
 .section-2inner-text>h4 {
     font-size: 16px;
     font-weight: 800;
@@ -381,7 +393,6 @@ button.nav-btn {
 }
 
 .section2>img {
-    filter: invert(1);
 }
 
 .section-2nd {
@@ -801,7 +812,12 @@ swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
     object-fit: cover;
     object-position: top;
 }
-
+.connection-icon > img:hover .social-media i {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    transition: 0.5s;
+}
 
 
 .card-2 {
@@ -1026,11 +1042,12 @@ button#pills-contact-tab::before {
 .section-6-text>h3 {
     font-size: clamp(14px, 3vw, 26px);
     font-weight: 700;
+    padding-bottom: 15px;
 }
 .main-section-6:before {
     position: absolute;
     content: "";
-    height: 90%;
+    height: 88%;
     width: 100%;
     left: 0;
     top: 0;
@@ -1045,7 +1062,7 @@ button#pills-contact-tab::before {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 18px 0;
+    margin: 25px 0;
     width: 80%;
     color: #6f6666;
 }
@@ -1054,7 +1071,7 @@ button#pills-contact-tab::before {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 18px 0;
+    margin: 25px 0;
     width: 70%;
     color: #6f6666;
 }
@@ -1063,7 +1080,7 @@ button#pills-contact-tab::before {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 18px 0;
+    margin: 25px 0;
     width: 85%;
     color: #6f6666;
 }
@@ -1072,7 +1089,7 @@ button#pills-contact-tab::before {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 18px 0;
+    margin: 25px 0;
     width: 60%;
     color: #6f6666;
 }
@@ -1116,6 +1133,7 @@ button#pills-contact-tab::before {
 .section-6-inner-content> h3 {
     font-size: clamp(16px, 2.3vw, 24px);
     font-weight: 600;
+    margin-bottom: 15px;
 }
 
 .section-6-inner-content>p {
@@ -1269,10 +1287,15 @@ span.inner-aria:before {
     width: 70%;
 }
 .section-7-first-side {
-    box-shadow: rgb(0 0 0 / 9%) -4px 0px 5px;
     padding: 20px;
+}
+.col-lg-6.inner-section-7-first {
+    box-shadow: rgb(0 0 0 / 9%) -4px 0px 5px;
     border: 4px dashed #080866;
     border-right: none;
+}
+.section-7-icons {
+    padding-bottom: 20px;
 }
 .section-7-mail-aria input {
     height: 40px;
@@ -1295,9 +1318,7 @@ textarea.inner-text_aria {
 }
 .side-section-7{
     background: #2b2929;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 20px;
 }
 
 .card-inner {
@@ -1356,6 +1377,13 @@ textarea.inner-text_aria {
     font-family: fontAwesome;
     color: #e99637;
     font-size: 20px;
+}
+.section-7-slidar {
+    position: relative;
+}
+.swiper-pagination.secseven.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    position: absolute;
+    bottom: -30px;
 }
 /*    section -----------7 end   */
 
@@ -1585,7 +1613,7 @@ textarea.inner-text_aria {
 }
 .section-10-images>img {
     width: 100%;
-    height: 310px;
+    height: 100%;
     object-fit: cover;
 }
 button.section-10-btn {
@@ -1603,7 +1631,19 @@ span.sec-10-span {
     font-weight: 600;
     color: #686464;
 }
-
+button.section-10-btn:hover {
+    background-color: #080866;
+    color: #fff;
+    transition: 0.6s;
+}
+.sec-10-ancher> a:hover {
+    color: #080866;
+    transition: 0.5s;
+}
+.section-10-body>h4:hover {
+    color: #080866;
+    transition: 0.5s;
+}
 button.section-10-btn::after {
     position: absolute;
     content: "\f0da";
@@ -1681,7 +1721,26 @@ button.section-10-btn::after {
     height: 100%;
     object-fit: cover;
 }
+h3.footer-heading:hover {
+    color: #07095f;
+    transition: 0.5s;
+}
 
+.inner-footer>li>a:hover {
+    color: #07095f;
+    transition: 0.5s;
+    text-decoration: underline;
+}
+.footer-icon>i:hover {
+    color: #fff;
+    background-color: #07095f;
+    transition: 0.5s;
+}
+.footer-contact>ul>li>a:hover{
+    color: #07095f;
+    transition: 0.5s;
+    text-decoration: underline;
+}
 .footer-inside {
     display: flex;
     align-items: center;
@@ -1864,8 +1923,22 @@ button.nav-btn:hover {
         display: none;
     }
 }
+.section-10-img >img {
+    height: 100%;
+    width:360px;
+    object-fit: cover;
+}
+
 @media screen and ( max-width: 1199px){
-   
+    .cus-direction-reverse {
+        flex-direction: column-reverse;
+    }
+    .cus-direction-column {
+        flex-direction: column;
+    }
+     .section-10-img >img {
+        width: 100%; 
+    }
     .close-icon>i {
         display: block;
     }
@@ -1962,7 +2035,16 @@ button.nav-btn {
 }
 }
 @media screen and ( max-width: 991px){
-    
+    .logo{
+        height: 90px;
+    }
+   .col-lg-6.inner-section-7-first{
+    border: none;
+   }
+ 
+    .section-9-main {
+        padding: 20px 0;
+    }
 }
 @media screen and ( max-width: 767px){
     .mail>a {
@@ -1971,6 +2053,9 @@ button.nav-btn {
         font-size: 14px;
         font-weight: 600;
         display: none;
+    }
+    .logo{
+        height: 70px;
     }
 .section-8-second-side > p {
     font-size: 10px;
